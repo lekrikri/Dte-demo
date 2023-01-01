@@ -26,7 +26,7 @@ function CityView() {
   return (
     <Container>
       <Page>
-        <Page.Title>City View</Page.Title>
+        <Page.Title>Nice City View</Page.Title>
       </Page>
       <Suspense fallback={<span>loading...</span>}>
         <Canvas

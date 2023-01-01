@@ -33,14 +33,14 @@ const NavigationItem = styled.div`
 `;
 
 const items = [
-  { title: "Globe View", icon: "dashboard", link: "/" },
+  { title: "Globe View", icon: "globe", link: "/" },
   {
     title: "Territoire View",
-    icon: "shopping-cart-loaded",
+    icon: "france",
     link: "/departmentView",
   },
-  { title: "City View", icon: "bullish", link: "/cityView" },
-  { title: "Equipment View", icon: "briefcase", link: "/equipmentView" },
+  { title: "City View", icon: "city", link: "/cityView" },
+  { title: "Equipment View", icon: "factory", link: "/equipmentView" },
 ];
 
 const Navigation = () => {

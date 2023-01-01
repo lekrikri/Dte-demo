@@ -1,18 +1,17 @@
-import { useThree, useFrame } from '@react-three/fiber';
-import { useGLTF, Html } from '@react-three/drei';
-import { Suspense, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { hover } from '@testing-library/user-event/dist/hover';
+import { useThree, useFrame } from "@react-three/fiber";
+import { useGLTF, Html } from "@react-three/drei";
+import { Suspense, useRef, useState } from "react";
+import * as THREE from "three";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function ModelLoader(props) {
   let cameras = useThree((state) => state.cameras);
   let info;
   const gltf = useGLTF(props.url);
-  const [infos, setInfos] = useState('');
-  const [objectPosition, setObjectPosition] = useState('');
+  const [infos, setInfos] = useState("");
+  const [objectPosition, setObjectPosition] = useState("");
   const [clicked, setClicked] = useState(false);
   const [hovered, setHover] = useState(false);
-  
 
   const click = (e) => {
     e.stopPropagation();
@@ -24,7 +23,7 @@ function ModelLoader(props) {
     if (Object.keys(userData).length === 0) {
       info = Object.keys(parentUserData)
         .map((key) => `${key}: ${parentUserData[key]}\n`)
-        .join('\n');
+        .join("\n");
       console.log(info);
       setClicked(true);
       setInfos(info);
@@ -33,7 +32,7 @@ function ModelLoader(props) {
     if (Object.keys(userData).length > 1) {
       info = Object.keys(userData)
         .map((key) => `${key}: ${userData[key]}\n`)
-        .join('\n');
+        .join("\n");
       console.log(info);
       setClicked(true);
       setInfos(info);
@@ -60,7 +59,6 @@ function ModelLoader(props) {
     mixer?.update(delta);
   });
 
-  
   //   return <primitive object={gltf.scene} />;
   return (
     <primitive
@@ -79,8 +77,6 @@ function ModelLoader(props) {
   );
 }
 
-
-
 export default function ModelContainer({ url, changeVisibility }) {
   return (
     <Suspense>
@@ -88,8 +84,3 @@ export default function ModelContainer({ url, changeVisibility }) {
     </Suspense>
   );
 }
-
-
-
-
-       
