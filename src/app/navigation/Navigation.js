@@ -5,7 +5,7 @@ import COLORS from "../../constants/colors";
 import ButtonGrid from "../../components/ButtonGrid";
 import CenteredTile from "../../components/CenteredTile";
 import Icon from "../../components/Icon";
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -33,15 +33,19 @@ const NavigationItem = styled.div`
 `;
 
 const items = [
-  { title: "Territory View", icon: "dashboard", link: "/" },
-  { title: "Department View", icon: "shopping-cart-loaded", link: "/departmentView" },
+  { title: "Globe View", icon: "dashboard", link: "/" },
+  {
+    title: "Department View",
+    icon: "shopping-cart-loaded",
+    link: "/departmentView",
+  },
   { title: "City View", icon: "bullish", link: "/cityView" },
-  { title: "Equipment View", icon: "briefcase", link: "/equipmentView" }
+  { title: "Equipment View", icon: "briefcase", link: "/equipmentView" },
 ];
 
 const Navigation = () => {
-    const navigate = useNavigate();
-    
+  const navigate = useNavigate();
+
   return (
     <Container>
       <ButtonGrid

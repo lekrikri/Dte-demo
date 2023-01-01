@@ -14,7 +14,7 @@ const Icon = ({
   icon,
   type = "ios",
   style = {},
-  iconSize = 100
+  iconSize = 100,
 }) => {
   const url = `https://img.icons8.com/${type}/${iconSize}/${color.replace(
     "#",

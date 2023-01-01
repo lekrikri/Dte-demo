@@ -26,7 +26,7 @@ const Actions = () => {
 
   return (
     <Container>
-      <Search value={searchText} onChange={text => setSearchText(text)} />
+      <Search value={searchText} onChange={(text) => setSearchText(text)} />
       <Notification
         isVisible={isNotificationVisible}
         onClick={() => setIsNotificationVisible(!isNotificationVisible)}
@@ -40,9 +40,9 @@ const Actions = () => {
       </Notification>
       <Avatar
         size={40}
-        url="https://www.pinclipart.com/picdir/middle/379-3797946_software-developer-computer-servers-web-others-web-developer.png"
+        url="https://media.licdn.com/dms/image/C5603AQHLMXqcF7Uy6g/profile-displayphoto-shrink_100_100/0/1576663047118?e=1678320000&v=beta&t=yy85fqFSI_WFJb0q09TuLt1XH8dwYvhXyk1aeHdjXFo"
       />
-      <AvatarText>Jack Ruswell</AvatarText>
+      <AvatarText>Christophe Ganou</AvatarText>
     </Container>
   );
 };

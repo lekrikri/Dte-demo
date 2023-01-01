@@ -28,10 +28,10 @@ function App() {
         <Header />
         <Navigation />
         <Routes>
-          <Route path="/departmentView" element={<DepartmentView />} />
+          <Route path="/departmentView" element={<TerritoryView />} />
           <Route path="/cityView" element={<CityView />} />
           <Route path="/equipmentView" element={<EquipmentView />} />
-          <Route path="/" element={<TerritoryView />} exact />
+          <Route path="/" element={<DepartmentView />} exact />
         </Routes>
       </Container>
     </BrowserRouter>
