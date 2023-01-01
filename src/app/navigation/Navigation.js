@@ -35,7 +35,7 @@ const NavigationItem = styled.div`
 const items = [
   { title: "Globe View", icon: "dashboard", link: "/" },
   {
-    title: "Department View",
+    title: "Territoire View",
     icon: "shopping-cart-loaded",
     link: "/departmentView",
   },

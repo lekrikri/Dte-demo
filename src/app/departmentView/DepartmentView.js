@@ -73,7 +73,7 @@ function DepartmentView() {
   return (
     <Container>
       <Page>
-        <Page.Title>Department View</Page.Title>
+        <Page.Title>Globe View</Page.Title>
       </Page>
 
       <MapCesium />
